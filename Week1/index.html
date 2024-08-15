@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SheCodes</title>
     <style>
+      body{
+        background-color: #f5f0fe;
+      }
       h1 {
-        color: brown;
+        color: #885df1;
         font-size: 48px;
         font-weight: thin;
         text-decoration: underline;
+        text-align: center;
+      }
+      h2{
+        color: #272044;
+        text-align: center;
       }
       .coders {
         color: blue;
@@ -20,30 +28,53 @@
       .stories {
         color: green;
       }
+     p{
+      text-align: center;
+     }
+     img{
+      display: block;
+        margin:0 auto;
+      }
+      button{
+        display: block;
+        color: #885df1;
+        margin: 2rem auto;
+        padding: 1rem 1.5rem;
+        border-radius: 50px;
+        border: 1px solid #885df1;
+        background: transparent;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      button:hover{
+        background-color:#885df1 ;
+        color: white;
+      }
     </style>
   </head>
   <body>
     <h1>SheCodes</h1>
+    <h2>Coding Workshop</h2>
+    <button class="apply">Apply now</button>
     <ul>
-      <a href="https://www.shecodes.io/students" target="_blank" class="coders"
-        ><li>Coders</li></a
-      >
-      <a
+      <li><a href="https://www.shecodes.io/students" target="_blank" class="coders"
+        >Coders</a
+      ></li>
+      <li><a
         href="https://www.shecodes.io/workshops"
         target="_blank"
         class="courses"
-        ><li>Courses</li></a
-      >
-      <a href="https://www.shecodes.io/stories" target="_blank" class="stories"
-        ><li>Stories</li></a
-      >
+        >Courses</a
+      ></li>
+      <li><a href="https://www.shecodes.io/stories" target="_blank" class="stories"
+        >Stories</a
+      ></li>
     </ul>
     <hr />
-    <h2>
+    <p>
       <strong>More Info</strong>
-    </h2>
+    </p>
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrZgxCqAFdgE21IKskLFipIdKK4L2mnn7IQ&s"
+      src="./Images/istockphoto-1332378618-170667a.webp"
       alt="A woman coding"
       width="300"
     />

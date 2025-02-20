@@ -104,12 +104,34 @@
         // } else {
         //     alert('Good afternoon!');
         // }
-        let country = prompt("What country are you from? ").toUpperCase()
-        if (country == 'BRAZIL' || country == 'PORTUGAL') {
-            alert('You speak Portuguese.')
-        } else {
-            alert("You don't speak Portuguese.")
+
+        <!-- function askForCountry(){
+            let country = prompt("What country are you from? ")
+            if (country === 'Brazil' || country === `Portugal`) {
+                alert("You speak portuguese.")
+            } else {
+                alert("Go learn portuguese!")
+            }
+        } askForCountry() -->
+
+        function changeHeading(newHeading) {
+            let h1 = document.querySelector("h1");
+            return h1.innerHTML = newHeading
         }
+
+        function applyNow() {
+            let name = prompt("What is your name? ");
+            let age = prompt("How old are you? ");
+            if (age >= 18) {
+                changeHeading(`Hi, ${name}! Welcome to SheCodes!`)
+            } else {
+                changeHeading(`Sorry, ${name}! You cannot join SheCodes.`)
+            }
+        }
+        let button = document.querySelector("button");
+        
+        button.addEventListener("click", applyNow);
+
     </script>
 </body>
 

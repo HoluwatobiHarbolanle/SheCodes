@@ -85,5 +85,32 @@
         <p>Coded by Oluwatobi Bolanle</p>
     </div>
 
+
+    <script>
+        function changeCity() {
+            let city = prompt("What city do you live in? ").toUpperCase();
+            let temperature = prompt('What is the temperature over there?');
+            let emoji = document.querySelector(".emoji");
+            let h1 = document.querySelector("h1");
+            if (temperature <= -11) {
+                h1.innerHTML = `😷 <br> Currently ${temperature}° in ${city}`
+            } else if (temperature >= -10 && temperature <= 0) {
+                h1.innerHTML = `🥶 <br> Currently ${temperature}° in ${city}`;
+            } else if (temperature >= 18 && temperature <= 25 ) {
+                h1.innerHTML = `😉 <br> Currently ${temperature}° in ${city}`;
+            } else if (temperature >= 26 && temperature <= 30) {
+                h1.innerHTML = `🙂 <br> Currently ${temperature}° in ${city}`;
+            } else if (temperature >=31 && temperature <= 35){
+                h1.innerHTML = `😐 <br> Currently ${temperature}° in ${city}`;
+            } else if (temperature >= 36 && temperature <= 40){
+                h1.innerHTML = `😖 <br> Currently ${temperature}° in ${city}`;
+            } else if (temperature >= 41){
+                h1.innerHTML = `😭 <br> Currently ${temperature}° in ${city}`;
+            } 
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", changeCity);
+    </script>
+
 </body>
 </html>

@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abby's Crotch</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
-        body{
+        html, body{
             width: 100%;
             padding: 0;
             margin: 0;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
 
         }
         h1, h2, h3, h4, h5, h6, p{
@@ -57,7 +70,11 @@
             line-height: 1.2;
         }
         .section-one p{
+            margin-top: 1em;
             font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.2;
+            text-align: justify;
         }
         .section-one button{
             margin-top: 2rem;
@@ -69,17 +86,24 @@
         }
         .section-one button:hover{
             transition: ease-in-out;
-            transition-delay: 200;
+            transition-delay: 500;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 12px;
             background-color: #eeeeee;
             color: #393e46;
         }
-
+        
+        .section-one button a:hover{
+            color: #393e46;
+        }
         .section-two{
             background-color: #eeeeee;
             margin: auto;
             padding: 5rem 10rem;
+            color:#393e46;
+        }
+        .container-div{
+            display: flex;
         }
         .section-two h2{
             text-align: center;
@@ -87,26 +111,73 @@
             color: #0092ca;
             margin-bottom: 1rem;
         }
-        .section-two{
-            color:#393e46;
+        .section-two h3{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 3rem;
+            color: #0092ca;
         }
-        .section-two div{
-            width: 40rem;
-            height: 40rem;
-            margin: 1rem auto;
+        .section-two #process-p{
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
         }
-        #hooks-image, #yarn-image{
-            width: 60%;
-            height: 60%;    
-            border-radius: 1rem;
-
+        .section-two .tools-div{
+            width: 20rem;
+            margin: 1rem .5rem;
+            box-shadow: -3px -5px 5px #d8d7d7;
+            padding: .3rem;
+            border-radius: .5rem;
+            font-size: 16px;
+        }
+        .tools-div:hover{
+            background-image: linear-gradient(to bottom, #222831, #393e46);
+            color: #eeeeee;
+        }
+        #image-div{
+            max-width: 20rem;
+            margin-bottom: 1rem;
+        }
+        #image-div img{
+            width: 100%;
+            border-radius: .5rem;
+        }
+        .tools-div p{
+            margin:0 1rem;
+            text-align: justify;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            line-height: 1.2;
         }
         .section-two h4{
-            line-break: strict;
+            margin-top: 2rem;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.2;
+            font-family: "Inter", sans-serif;
+        }
+    
+        .links{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .links a{
+            color: #0092ca;
+            text-decoration: none;
+        }
+        .links a:hover{
+            text-decoration-line: underline;
+        }
+        .links a:active{
+            color: #393e46;
         }
         ul{
             color: #0092ca;
             font-size: 18px;
+            list-style: none;
         }
         footer{
             padding: 1rem;
@@ -140,7 +211,7 @@
             <div>
                 <h1>Hook, Yarn, Create - The Art of Crotcheting!</h1>
                 <p>Crochet is a process of creating textiles by using a crochet hook to interlock loops of yarn, thread, or strands of other materials. Welcome to the world of crotchet, a timeless craft that combines creativity with relaxation. From beginners to experienced crafters, crotchet offers a wide range of projects and techniques to explore, from clothing and accessories to home decor and toys. Whether you're looking to unwind, express yourself creatively, or create something special for loved ones, crotchet is an excellent choice!</p>
-                <button>Learn more </button>
+                <a href="https://en.wikipedia.org/wiki/Crochet" target="_blank"><button>Learn more</button></a>
                 <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/159/610/original/roundcrochetbasket.jpg?1741471299 -->
             </div>
             <img src="./roundcrochetbasket.jpg" alt="Hook and Yarn">
@@ -149,31 +220,40 @@
 
     <section class="section-two">
         <h2>How to start</h2>
-        <p>The process of crotcheting is one that becomes easy and fun in the long run. Starting out is usually not an hard nut to crack, the first style that births into others that graduated into complexity is now being avoided.</p>
-        <h4>Things needed:</h4>
+        <p id="process-p">The process of crotcheting is one that becomes easy and fun in the long run. Starting out is usually not an hard nut to crack, the first style that births into others that graduated into complexity is now being avoided.</p>
+        <h3>Things needed</h3>
 
-        <div>
-            <div>
-                <img src="./istockphoto-927603460-1024x1024.jpg" alt="Crotchet hooks in different colors." id="hooks-image">
+        <div class="container-div">
+            <div class="tools-div">
+                <div id="image-div">
+                    <img src="./istockphoto-927603460-1024x1024.jpg" alt="Crotchet hooks in different colors." id="hooks-image">
+                </div>
                 <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/008/original/istockphoto-927603460-1024x1024.jpg?1741778303 -->
                 <p>Crotchet hooks is the crafter's tool in creating magic with the yarn, interlocking threads into one another and forming quality. Get in different sizes, each resulting in output needed for your product.</p>
             </div>
-            <div>
-                <img src="./images2.jpeg" alt="Yarns in different colors." id="yarn-image">
+            <div class="tools-div">
+                <div id="image-div">
+                    <img src="./istockphoto-1782169937-1024x1024.jpg" alt="Yarns in different colors." id="yarn-image">
+                </div>
                 <p>Yarn is a twisted strand of fiber used for knitting or weaving. With it, crotcheting is made. It's in different colors and textures that forms the desired shape with hooks as its shaper.</p>
             </div>
-            <div>
-                <img src="#" alt="">
-                <p></p>
+            <div class="tools-div">
+                <div id="image-div">
+                    <img src="./images.jpeg" alt="Scissors used in crotcheting.">
+                </div>
+                <p>A scissors is needed in crotcheting for cutting out the left-out yarn and trimming the edges where necesssary.</p>
             </div>
         </div>
 
-        <h4>For learning and practice, several resources have been made available online. Life videos of the practical aspect of crotcheting for different products useful to man and his living. Below are some links!</h4>
-        <a href="#">Miarti Crotchet</a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <h4>For learning and practice, several resources have been made available online. Life videos of the practical aspect of crotcheting for different products useful to man and his living. <div id=""> Below are some links:</div></h4>
+        <div class="links">
+            <a href="https://sweetbeecrochet.com/the-ultimate-beginner-crochet-resource/" target="_blank">Sweet Bee crotchet</a>
+            <a href="https://www.youtube.com/@miarti.crochet" target="_blank">Miarti Crotchet</a>
+            <a href="https://www.crochet.org/page/LearnToCrochet" target="_blank">Crochet Guild of America</a>
+        </div>
 
-        <ul>List of crotchet products:
+        <h3 class="ul-heading">List of crotchet products</h3>
+        <ul>
             <li>Bags</li>
             <li>Hats/Head bands</li>
             <li>Foot wears</li>

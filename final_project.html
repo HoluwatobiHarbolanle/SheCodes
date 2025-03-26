@@ -124,15 +124,18 @@
         }
         .section-two .tools-div{
             width: 20rem;
-            margin: 1rem .5rem;
+            margin: 1rem .5em;
             box-shadow: -3px -5px 5px #d8d7d7;
             padding: .3rem;
             border-radius: .5rem;
             font-size: 16px;
         }
         .tools-div:hover{
-            background-image: linear-gradient(to bottom, #222831, #393e46);
-            color: #eeeeee;
+            transform: scale(0.9);
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+            transition-duration: 0.5s;
+            transition-property: opacity;
         }
         #image-div{
             max-width: 20rem;
@@ -152,8 +155,8 @@
         }
         .section-two h4{
             margin-top: 2rem;
-            font-weight: 500;
-            font-size: 14px;
+            font-weight:400;
+            
             line-height: 1.2;
             font-family: "Inter", sans-serif;
         }
@@ -167,6 +170,7 @@
         .links a{
             color: #0092ca;
             text-decoration: none;
+            font-size: 18px;
         }
         .links a:hover{
             text-decoration-line: underline;
@@ -176,7 +180,7 @@
         }
         ul{
             color: #0092ca;
-            font-size: 18px;
+            font-size: 16px;
             list-style: none;
         }
         footer{
@@ -188,7 +192,7 @@
             color: #eeeeee;
         }
         footer h3{
-            font-style: oblique;
+            
             font-weight: 600;
             font-size: 2rem;
             margin-bottom: 1.2rem;
@@ -212,9 +216,9 @@
                 <h1>Hook, Yarn, Create - The Art of Crotcheting!</h1>
                 <p>Crochet is a process of creating textiles by using a crochet hook to interlock loops of yarn, thread, or strands of other materials. Welcome to the world of crotchet, a timeless craft that combines creativity with relaxation. From beginners to experienced crafters, crotchet offers a wide range of projects and techniques to explore, from clothing and accessories to home decor and toys. Whether you're looking to unwind, express yourself creatively, or create something special for loved ones, crotchet is an excellent choice!</p>
                 <a href="https://en.wikipedia.org/wiki/Crochet" target="_blank"><button>Learn more</button></a>
-                <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/159/610/original/roundcrochetbasket.jpg?1741471299 -->
+            
             </div>
-            <img src="./roundcrochetbasket.jpg" alt="Hook and Yarn">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/159/610/original/roundcrochetbasket.jpg?1741471299">
         </section>
     </header>
 
@@ -226,25 +230,24 @@
         <div class="container-div">
             <div class="tools-div">
                 <div id="image-div">
-                    <img src="./istockphoto-927603460-1024x1024.jpg" alt="Crotchet hooks in different colors." id="hooks-image">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/161/275/original/istockphoto-1270649618-612x612.jpg?1742896036">
                 </div>
-                <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/008/original/istockphoto-927603460-1024x1024.jpg?1741778303 -->
                 <p>Crotchet hooks is the crafter's tool in creating magic with the yarn, interlocking threads into one another and forming quality. Get in different sizes, each resulting in output needed for your product.</p>
             </div>
             <div class="tools-div">
                 <div id="image-div">
-                    <img src="./istockphoto-1782169937-1024x1024.jpg" alt="Yarns in different colors." id="yarn-image">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/161/274/original/istockphoto-1470101697-612x612.jpg?1742895842">
                 </div>
                 <p>Yarn is a twisted strand of fiber used for knitting or weaving. With it, crotcheting is made. It's in different colors and textures that forms the desired shape with hooks as its shaper.</p>
             </div>
             <div class="tools-div">
                 <div id="image-div">
-                    <img src="./images.jpeg" alt="Scissors used in crotcheting.">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/161/276/original/download.jpg?1742896173">
                 </div>
                 <p>A scissors is needed in crotcheting for cutting out the left-out yarn and trimming the edges where necesssary.</p>
             </div>
         </div>
-
+        <hr>
         <h4>For learning and practice, several resources have been made available online. Life videos of the practical aspect of crotcheting for different products useful to man and his living. <div id=""> Below are some links:</div></h4>
         <div class="links">
             <a href="https://sweetbeecrochet.com/the-ultimate-beginner-crochet-resource/" target="_blank">Sweet Bee crotchet</a>
@@ -264,8 +267,16 @@
     </section>
 
     <footer>
-        <h3>Crotcheting is my choice!</h3>
+        <h3><em>Crotcheting is my choice!</em></h3>
         <p>Coded by Oluwatobi Bolanle</p>
+
+        <!-- <script>
+
+            let name = prompt("What is your name? ");
+            let country = prompt("Where are you from? ");
+            alert("Welcome " + name + " from " + country);
+            welcome()
+        </script> -->
     </footer>
 </body>
 </html>

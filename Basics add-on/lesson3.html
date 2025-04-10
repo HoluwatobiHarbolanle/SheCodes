@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+
+    <style>
+        div{
+            margin: 2rem 5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .image-one{
+            transform: scale(1.5) rotateX('150deg');
+        }
+        .image-two{
+            transform: rotate(320deg);
+        }
+        .image-three{
+            transform: translateY(100px) scale(0.7);
+        }
+        .image-four{
+            transform: rotate(400deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/139/original/Erin-Ijesha-Olumirin-Waterfall-e1500469089520.jpg?1743709262" alt="Image of Erin Ijesha Olumirin waterfall" width="300px" height="200px" class="image-one">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/140/original/images.jpg?1743709293" alt="Waterfall image" width="300px" height="200px" class="image-two">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/142/original/oduduwa-was-the-first.jpg?1743709356" alt="Image of Oduduwa's compound" width="300px" height="200px" class="image-three">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/141/original/Moremi_Ajasoro_statue.jpg?1743709327" alt="Image of Moremi Ajasoro" width="300px" height="200px" class="image-four">
+    </div>
+</body>
+</html>

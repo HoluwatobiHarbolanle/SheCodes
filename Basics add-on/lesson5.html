@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme</title>
+    
+    <style>
+        main{
+            max-width: 1028px;
+            margin: 0 auto;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h4{
+            font-family: sans-serif;
+        }
+        #button{
+            padding: 1rex 1rem;
+            background: transparent;
+            border: 1px solid gray;
+            border-radius: 1rex;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>The Phenomenon Of Writing</h1>
+        <p>Writing to many people is a skill. Unfortunately, that is only how it is presented and not what it really is.</p>
+        <h5>Writing is an <em>HABIT!</em></h5>
+        <h4>What colour would you love to write on? <button id="button">Dark</button></h4>
+    </main>
+
+    <script>
+        const body = document.querySelector('body');
+        let main = document.querySelector('main');
+        let btn = document.getElementById('button');
+
+        function changeTheme() {
+            body.style.backgroundColor = 'black';
+            body.style.color = 'white';
+            btn.innerText = 'White';
+            btn.style.color = 'white';
+        }
+
+        btn.addEventListener('click', changeTheme);
+    </script>
+</body>
+</html>

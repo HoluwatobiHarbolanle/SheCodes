@@ -6,6 +6,13 @@
     <title>Dark Theme</title>
     
     <style>
+        body.dark-theme{
+            background-color: black;
+            color: white;
+        }
+        body.dark-theme button{
+            color: white;
+        }
         main{
             max-width: 1028px;
             margin: 0 auto;
@@ -44,7 +51,29 @@
             btn.style.color = 'white';
         }
 
-        btn.addEventListener('click', changeTheme);
+        function normalTheme() {
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+            btn.innerText = 'Dark';
+            btn.style.color = 'black'
+        }
+
+
+
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+        });
     </script>
+            <!-- let isToggled = false;
+        btn.addEventListener('click', () => {
+
+            if (isToggled) {
+                normalTheme()
+                isToggled = false;
+            } else {
+                changeTheme()
+                isToggled = true;
+            }
+        }); -->
 </body>
 </html>

@@ -28,6 +28,7 @@
             color: white;
             padding: 5px;
             margin-block-start: 0;
+            border-radius: 5px;
         }
 
         .texts{
@@ -64,7 +65,7 @@
             color: white;
             background: midnightblue;
             padding: 5px;
-
+            border-radius: 5px;
         }
         .forms-container{
             border-radius: 5px;
@@ -74,6 +75,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             padding: 20px;
+            border-radius: 5px;
         }
         
         fieldset{
@@ -90,12 +92,17 @@
             margin-top: 5px;
             font-size: 20px;
             font-weight: 600;
-            color: midnightblue;
+        
         }
         img{
             width: 25rem;
             height: 20rem;
             border-radius: 5px;
+            transition:all 150ms ease-in-out;
+        }
+        img:hover{
+            filter: saturate(80%);
+            transform: scale(0.95);
         }
 
         .last-p{
@@ -109,12 +116,16 @@
             background: midnightblue;
             color: white;
             padding: 10px;
+            border-radius: 5px;
         }
         button{
-            margin: 0 0 5px 0;
+            display: block;
+            margin: 3px auto;
             font-family: 18px;
             border: 1px solid midnightblue;
+            border-radius: 2rem;
             background: transparent;
+            color: rgb(117, 113, 113);
             padding: 5px 15px;
         }
     </style>
@@ -122,7 +133,7 @@
 </head>
 <body>
     <main>
-        <button id="button">Dark</button>
+        <button id="button">Change theme</button>
         <h1>Literature is LIFE</h1>
         
         <div class="texts">
@@ -144,16 +155,20 @@
             <h3>literature takes three forms:</h3>
             <div class="lit-forms">
                 <fieldset>
+                    <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/169/130/original/prose_%282%29.jpg?1751030383 -->
                     <img src="./Images/prose (2).jpg" alt="Image representing a prose art.">
                     <figcaption>Prose</figcaption>
                     <p>Prose is straight on. It's in chapters. It's vocabulary edged. It tells an experience. It's narration.</p>
                 </fieldset>
                 <fieldset>
+                    <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/168/144/original/people-at-a-theater-looking-at-a-dress-rehearsal-of-ballet-performing-arts.jpg?1749905951 -->
+                    <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/169/131/original/poetry.jpg?1751030645 -->
                     <img src="./Images/poetry.jpg" alt="Image representing a poetry art.">
                     <figcaption>Poetry</figcaption>
-                    <p>Poetry is rhythmical rendering it a musical nature. It's in verse form. It's well keen on sounds. It compacts emotions into words, using embellished language. It expresses an experience.</p>
+                    <p>Poetry is rhythmical, rendering it a musical nature. It's in verse form. It's well keen on sounds. It compacts emotions into words, using embellished language. It expresses an experience.</p>
                 </fieldset>
                 <fieldset>
+                    <!-- https://s3.amazonaws.com/shecodesio-production/uploads/files/000/168/144/original/people-at-a-theater-looking-at-a-dress-rehearsal-of-ballet-performing-arts.jpg?1749905951 -->
                     <img src="./Images/drama.jpg" alt="Image representing the art of drama.">
                     <figcaption>Drama</figcaption>
                     <p>Drama is performance. It imitates <strong>actions</strong> through <strong>dialogue</strong> exhibiting <strong>conflict</strong>. It can be a play or a theatre. It is live.</p>
@@ -174,14 +189,12 @@
         function changeTheme() {
             body.style.backgroundColor = 'black';
             body.style.color = 'white';
-            btn.innerText = 'White';
             btn.style.color = 'white';
         };
 
         function normalTheme() {
             body.style.backgroundColor = 'white';
             body.style.color = 'black';
-            btn.innerText = 'Dark';
             btn.style.color = 'black'
         };
     
